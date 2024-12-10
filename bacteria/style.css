@@ -1,0 +1,106 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+hr {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+span {
+  padding: 3px;
+  color: white;
+  border-radius: 6px;
+}
+
+
+span.red {
+  background: red;
+}
+
+span.green {
+  background: green;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, .reinput:hover {
+  background-color: #45a049;
+}
+
+.form-content{
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 70px auto;
+  padding: 0 20px 10px 20px;
+  width: 60%;
+  background: white;
+  background-clip: padding-box;
+  border-radius: 6px;
+  box-shadow: 1px 2px 10px black;
+}
+
+.bacteria {
+  display: flex;
+  justify-content: space-around;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .bacteria {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 300px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .bacteria {
+    align-items: normal;
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
